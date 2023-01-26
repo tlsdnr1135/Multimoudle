@@ -30,6 +30,8 @@ subprojects {
         mavenCentral()
     }
 
+//    tasks.register("prepareKotlinBuildScriptModel"){}
+
     // 관리하는 모듈에 공통 dependencies
     dependencies {
         implementation ('org.springframework.boot:spring-boot-starter-web')
@@ -46,21 +48,21 @@ subprojects {
 }
 
 //최신 그레들 문법이 맞나.. -> 하위 모듈에 하면 안되나...
-project(':api_center') {
-    dependencies {
-//        implementation ('org.springframework.boot:spring-boot-starter-web')
-        implementation project(':api_common')
-    }
-}
-
-project(':api_common') {
-    dependencies {
-//        api ('org.springframework.boot:spring-boot-starter-web')
-        tasks.named("bootJar") {
-            enabled = false
-        }
-        tasks.named("jar") {
-            enabled = true
-        }
-    }
-}
+//project(':api_center') {
+//    dependencies {
+////        implementation ('org.springframework.boot:spring-boot-starter-web')
+//        implementation project(':api_common')
+//    }
+//}
+//
+//project(':api_common') {
+//    dependencies {
+////        api ('org.springframework.boot:spring-boot-starter-web')
+//        tasks.named("bootJar") {
+//            enabled = false
+//        }
+//        tasks.named("jar") {
+//            enabled = true
+//        }
+//    }
+//}
