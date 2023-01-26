@@ -1,8 +1,7 @@
-package com.center.api_center.controller;
+package com.center.module.controller;
 
-import com.common.api_common.ExService;
+import com.center.module.ExService;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 

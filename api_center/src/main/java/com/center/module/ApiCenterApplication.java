@@ -1,14 +1,10 @@
-package com.center.api_center;
+package com.center.module;
 
-import com.common.api_common.ExService;
-import com.common.api_common.NameEntity;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.ComponentScans;
 
-@ComponentScan(value="com.common.api_common")
-@ComponentScan(value="com.center.api_center")
+
 @SpringBootApplication
 public class ApiCenterApplication {
     public static void main(String[] args) {

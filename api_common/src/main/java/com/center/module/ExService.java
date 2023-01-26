@@ -1,4 +1,4 @@
-package com.common.api_common;
+package com.center.module;
 
 import org.springframework.stereotype.Service;
 
